@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia do Hóspede - Laghetto Villa Moura</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
+body{background:#F6F3ED;color:#0A2540;padding-bottom:90px}
+.topbar{background:#0A2540;color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20}
+.topbar b{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:1px}
+.topbar b span{color:#C6A664}
+.topbar small{font-size:10px;letter-spacing:2px;color:#C6A664;display:block}
+.hero{position:relative;height:300px;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,37,64,.95),rgba(10,37,64,.15))}
+.hero-text{position:absolute;bottom:16px;left:16px;right:16px;z-index:2;color:#fff}
+.hero-text small{background:#C6A664;color:#0A2540;padding:6px 10px;border-radius:20px;font-weight:800;font-size:11px;letter-spacing:1px}
+.hero-text h1{font-family:'Playfair Display',serif;font-size:32px;line-height:1.05;margin:10px 0 4px}
+.hero-text p{color:#E8E0CE;font-size:14px}
+.wrap{padding:14px}
+.alert{background:#FFF3CD;border:1px solid #E6C87A;border-radius:14px;padding:14px;font-size:14px;line-height:1.5;color:#5A4300}
+.alert b{color:#0A2540}
+.hotel-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 4px 20px rgba(10,37,64,.08);margin:14px 0}
+.hotel-card .in{padding:16px}
+.hotel-card h2{font-family:'Playfair Display',serif;font-size:22px;color:#0A2540}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.mini{background:#F6F3ED;padding:12px;border-radius:12px;text-align:center;font-size:13px;border:1px solid #EEE7D8}
+.mini b{display:block;font-size:15px;color:#0A2540}
+#loc{background:#0A2540;color:#fff;padding:14px;border-radius:14px;text-align:center;font-size:14px}
+#loc button{background:#C6A664;border:none;padding:12px;border-radius:10px;font-weight:800;margin-top:8px;cursor:pointer;width:100%;color:#0A2540}
+.manual{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:10px}
+.manual button{padding:9px 12px;border-radius:20px;border:none;background:#fff;font-weight:bold;font-size:13px;cursor:pointer;color:#0A2540}
+.manual button.hotel{background:#C6A664}
+.search{width:100%;padding:13px;border-radius:12px;border:1px solid #DDD5C2;font-size:16px;margin:12px 0;background:#fff;color:#0A2540}
+.filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px}
+.filters button{white-space:nowrap;padding:9px 14px;border-radius:20px;border:1px solid #DDD5C2;background:#fff;color:#0A2540;cursor:pointer;font-weight:600}
+.filters button.active{background:#0A2540;color:#fff}
+.bairros{display:flex;gap:8px;overflow-x:auto;margin:6px 0}
+.bairros button{white-space:nowrap;padding:8px 12px;border-radius:20px;border:1px solid #DDD5C2;background:#fff;color:#666;font-size:13px}
+.bairros button.active{background:#C6A664;color:#0A2540;font-weight:bold}
+.card{background:#fff;border-radius:16px;padding:14px;margin:10px 0;box-shadow:0 2px 12px rgba(10,37,64,.06);border:1px solid #EEE7D8}
+.card h3{font-size:18px;color:#0A2540}
+.tag{display:inline-block;background:#0A2540;color:#fff;font-size:11px;font-weight:bold;padding:4px 8px;border-radius:8px;margin:5px 0}
+.tag.gold{background:#C6A664;color:#0A2540}
+.dist{color:#1A7A3A;font-weight:bold;font-size:13px}.horario{color:#666;font-size:13px;margin:3px 0}
+.btns{display:flex;gap:8px;margin-top:10px}.btns a{flex:1;text-align:center;padding:11px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:14px}
+.ligar{background:#25D366;color:#fff}.maps{background:#0A2540;color:#fff}
+.section-title{font-family:'Playfair Display',serif;font-size:22px;margin:20px 0 6px;color:#0A2540}
+.section-title span{color:#C6A664}
+.tip{background:#fff;padding:14px;border-radius:14px;font-size:14px;line-height:1.6;color:#333;border-left:4px solid #C6A664}
+.share{position:fixed;bottom:12px;left:12px;right:12px;background:#0A2540;color:#fff;text-align:center;padding:14px;border-radius:14px;font-weight:bold;text-decoration:none;z-index:10;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+.share span{color:#C6A664}
+footer{text-align:center;color:#999;font-size:11px;margin:20px 0 70px;line-height:1.5}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div><b>LAGHETTO <span>VILLA MOURA</span></b><small>RIO GRANDE • RS</small></div><div style="text-align:right;font-size:12px">★ ★ ★<br>Guia do Hóspede</div></div>
+
+<div class="hero">
+<img src="https://cdn.prod.website-files.com/653963f1c7eb8bfefde90812/69c67af669d26124dd2b7ec4_laghetto_villa_moura_fachada_2023out-47%20(1)%20(1).avif" alt="Laghetto Villa Moura - Fachada">
+<div class="hero-text"><small>BEM-VINDO • SEJA BEM-VINDO</small><h1>Onde comer<br>em Rio Grande?</h1><p>Guia feito para você, hóspede do Villa Moura</p></div>
+</div>
+
+<div class="wrap">
+
+<div class="alert">
+<b>⚠️ Importante sobre esta unidade:</b><br>
+Esta unidade <b>não possui restaurante em funcionamento</b> e o Restaurante Marco's <b>não faz mais parte do hotel</b>.<br><br>
+Por isso criamos este guia: os melhores lugares a poucos metros do hotel, para você não ficar sem opção à noite.
+</div>
+
+<div class="hotel-card"><div class="in">
+<h2>Seu Hotel</h2>
+<p style="color:#666;font-size:14px;margin:6px 0">R. General Neto, 333 - Centro - Em frente à Praça Tamandaré<br>📞 Recepção 24h: (53) 3931-0200</p>
+<div class="grid">
+<div class="mini"><b>Check-in</b>14:00</div>
+<div class="mini"><b>Check-out</b>12:00</div>
+<div class="mini"><b>Café da manhã</b>Seg-Sex 6h-10h<br>Sáb-Dom 6h-10h30</div>
+<div class="mini"><b>Estrutura</b>Academia • Sauna<br>Wi-Fi • Estacionamento</div>
+</div>
+<p style="font-size:12px;color:#999">Fotos: Site oficial Laghetto Hotéis • Guia não oficial, feito para hóspedes</p>
+</div></div>
+
+<div id="loc">📍 Sua localização já começa no hotel<br>
+<button onclick="pegarLoc()">📍 USAR MEU GPS</button>
+<div class="manual">
+<button class="hotel" onclick="setLocal(-32.034717,-52.098436,'Laghetto Villa Moura')">📍 Estou no Hotel</button>
+<button onclick="setLocal(-32.185,-52.161,'Cassino')">📍 Estou no Cassino</button>
+<button onclick="setLocal(-32.037,-52.104,'BGV')">📍 Estou no BGV</button>
+</div>
+<p style="font-size:11px;color:#C6A664;margin-top:8px">Se abriu pelo Whats, clica nos 3 pontinhos > Abrir no Chrome pra liberar o GPS</p>
+</div>
+
+<h2 class="section-title">A pé do hotel <span>• 200m - 500m</span></h2>
+<p style="color:#666;font-size:13px">Esses 3 você vai andando, sem precisar de carro ou app.</p>
+
+<input class="search" id="busca" placeholder="🔍 Buscar: pizza, xis, frutos do mar..." onkeyup="render()">
+<div class="filters">
+<button class="active" onclick="setCat('todos',this)">Todos</button>
+<button onclick="setCat('restaurante',this)">🍽️ Restaurantes</button>
+<button onclick="setCat('pizzaria',this)">🍕 Pizzarias</button>
+<button onclick="setCat('lancheria',this)">🍔 Lancherias</button>
+<button onclick="setCat('bar',this)">🍻 Bares</button>
+<button onclick="setCat('aberto',this)">🟢 Abertos Agora</button>
+</div>
+<div class="bairros" id="bairros"></div>
+<div id="lista"></div>
+
+<h2 class="section-title">Dica da <span>recepção</span></h2>
+<div class="tip">
+<b>Hoje à noite sem sair do Centro:</b> Galeteria da Nonna (400m a pé) ou Pizza Prime (200m).<br><br>
+<b>Quer praia?</b> Cassino fica a 19,6km - 25 min de carro. Lá tem Nostra Fermata e Bon Appetit.<br><br>
+<b>Quer passear a pé?</b> Praça Tamandaré (em frente), Catedral São Pedro (400m), Museu Oceanográfico (1,2km).
+</div>
+
+<footer>Guia do Hóspede - Laghetto Villa Moura<br>Informações de horários e telefones podem mudar. Confirme antes de sair.<br>Feito para facilitar sua estadia em Rio Grande.</footer>
+</div>
+
+<a class="share" href="https://wa.me/?text=Estou%20no%20Laghetto%20Villa%20Moura%20e%20achei%20esse%20guia%20de%20onde%20comer%20em%20Rio%20Grande" target="_blank">📤 COMPARTILHAR COM OUTRO HÓSPEDE <span>→</span></a>
+
+<script>
+let userLat=-32.034717,userLng=-52.098436,cat='todos',bairro='todos';
+const bairrosList=['todos','Centro','BGV','Cassino','Barra','Parque'];
+const dados=[
+{n:'Pizza Prime Centro - 200m do hotel',c:'pizzaria',b:'Centro',t:'+70 sabores • Vegana • Doce • Mais perto do hotel',e:'R. Gen. Neto, 474 - Centro',f:'555330356444',h:'Todo dia 17h-00h',lat:-32.035,lng:-52.098,abre:17,fecha:24},
+{n:'Pizzaria Água na Boca - 300m',c:'pizzaria',b:'Centro',t:'Pizza à la carte • Preço bom • A pé',e:'R. Benjamin Constant, 197 - Centro',f:'5553984159349',h:'19h30-23h30',lat:-32.034,lng:-52.100,abre:19,fecha:23},
+{n:'Galeteria da Nonna - 400m',c:'restaurante',b:'Centro',t:'Galeto • Rodízio • Tradição • A pé do hotel',e:'R. Andradas, 432 - Centro',f:'555332313648',h:'11h40-14h30 / 19h30-23h',lat:-32.036,lng:-52.099,abre:11,fecha:23},
+{n:'Pizze Del Maestro',c:'pizzaria',b:'Centro',t:'Rodízio • Massa fina • Borda recheada',e:'Centro - Rio Grande',f:'5553984459992',h:'19h-23h30',lat:-32.036,lng:-52.102,abre:19,fecha:23},
+{n:'Casa Europa Gastrobar',c:'bar',b:'Centro',t:'Mojitos • Jantar moderno',e:'Centro - Rio Grande',f:'',h:'19h-23h30',lat:-32.033,lng:-52.097,abre:19,fecha:23},
+{n:'Dog da Estação',c:'lancheria',b:'Centro',t:'Lanches • Frutos do mar • Ao vivo sexta',e:'Av. Rio Grande, 522',f:'555331920555',h:'11h-02h',lat:-32.04,lng:-52.11,abre:11,fecha:26},
+{n:'Giga Lanches - BGV',c:'lancheria',b:'BGV',t:'Xis Tudão • Tábua',e:'Rua Dr. Marciano Espindola, 259 - BGV',f:'5555984072121',h:'18h-23h30',lat:-32.037,lng:-52.104,abre:18,fecha:23},
+{n:'Nostra Fermata',c:'pizzaria',b:'Cassino',t:'Italiana • Forno a lenha • Cassino',e:'Av. Atlântica, 713 - Cassino',f:'5553991002101',h:'19h-23h30',lat:-32.189079,lng:-52.164679,abre:19,fecha:23},
+{n:'Bon Appetit',c:'pizzaria',b:'Cassino',t:'Fermentação natural • Cassino',e:'Av. Atlântica, 289 - Cassino',f:'5553991775320',h:'18h-00h',lat:-32.182612,lng:-52.157155,abre:18,fecha:24},
+{n:'Pizza Prime Cassino',c:'pizzaria',b:'Cassino',t:'Pizza Prime na praia',e:'Av. Atlântica, 476 - Cassino',f:'555332046404',h:'17h-00h',lat:-32.185133,lng:-52.161069,abre:17,fecha:24},
+{n:'Tilinho Lanches',c:'lancheria',b:'Cassino',t:'Lancheria + Restaurante',e:'R. Lisboa, 424 - Cassino',f:'555332365401',h:'11h-14h30 / 18h-00h',lat:-32.177766,lng:-52.164553,abre:11,fecha:24},
+{n:'Forno e Mar Pizza Bar',c:'pizzaria',b:'Cassino',t:'No Cassino Hotel',e:'Av. Rio Grande, 135 - Cassino',f:'5553999041872',h:'19h-00h',lat:-32.183653,lng:-52.160309,abre:19,fecha:24},
+{n:'Restaurante Mattos',c:'restaurante',b:'Cassino',t:'Frutos do mar • Pastel • 4.8★',e:'Rua Paulino Modernell, 500 - Cassino',f:'555332365004',h:'11h30-15h / 19h-22h',lat:-32.187794,lng:-52.159211,abre:11,fecha:22},
+{n:'Boi na Brasa',c:'restaurante',b:'Cassino',t:'Churrasquinho do Cassino',e:'Av. Atlântica, 1513 - Cassino',f:'5553981234171',h:'17h-22h',lat:-32.200117,lng:-52.178171,abre:17,fecha:22},
+{n:'Pátio Barracão',c:'bar',b:'Cassino',t:'Food trucks • Música ao vivo',e:'Av. Rio Grande, 30 - Cassino',f:'555332361531',h:'Sex-Dom 18h-00h',lat:-32.185959,lng:-52.157218,abre:18,fecha:24},
+{n:'Garage Beer Kss',c:'bar',b:'Cassino',t:'Cerveja • Conveniência',e:'Av. Rio Grande, 144 - Cassino',f:'5553991073945',h:'15h-01h',lat:-32.183307,lng:-52.160063,abre:15,fecha:25},
+{n:'Onça Gaúcha',c:'bar',b:'Cassino',t:'Bar • Pub • Beira-mar',e:'Av. Beira Mar, 318 - Cassino',f:'5553991575957',h:'10h-23h',lat:-32.185911,lng:-52.154773,abre:10,fecha:23},
+];
+function distKm(lat1,lon1,lat2,lon2){let R=6371,dLat=(lat2-lat1)*Math.PI/180,dLon=(lon2-lon1)*Math.PI/180;let a=Math.sin(dLat/2)**2+Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));}
+function pegarLoc(){if(!navigator.geolocation){alert('Use o botão Estou no Hotel');return;}navigator.geolocation.getCurrentPosition(p=>{userLat=p.coords.latitude;userLng=p.coords.longitude;document.getElementById('loc').innerHTML='📍 Localização ativada! Distância real ✅';render();},()=>alert('Ative o GPS ou clique em Estou no Hotel'));}
+function setLocal(lat,lng,nome){userLat=lat;userLng=lng;document.getElementById('loc').innerHTML='📍 Você está em '+nome+'! Distância calculada ✅';render();}
+function setCat(c,el){cat=c;document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));el.classList.add('active');render();}
+function setBairro(b,el){bairro=b;document.querySelectorAll('.bairros button').forEach(x=>x.classList.remove('active'));el.classList.add('active');render();}
+function estaAberto(d){let h=new Date().getHours();let f=d.fecha>=24?d.fecha-24:d.fecha;if(d.fecha>24){return h>=d.abre||h<f;}return h>=d.abre&&h<d.fecha;}
+function render(){
+let q=document.getElementById('busca').value.toLowerCase();
+let lista=dados.map(d=>{let dist=distKm(userLat,userLng,d.lat,d.lng);return {...d,dist};});
+lista.sort((a,b)=>a.dist-b.dist);
+lista=lista.filter(d=>{if(cat==='aberto'&&!estaAberto(d))return false;if(cat!=='todos'&&cat!=='aberto'&&d.c!==cat)return false;if(bairro!=='todos'&&d.b!==bairro)return false;if(q&&!(d.n.toLowerCase().includes(q)||d.t.toLowerCase().includes(q)))return false;return true;});
+let bh='';bairrosList.forEach(b=>{bh+=`<button class="${b===bairro?'active':''}" onclick="setBairro('${b}',this)">${b==='todos'?'Todos Bairros':b}</button>`});
+document.getElementById('bairros').innerHTML=bh;
+let html='';lista.forEach(d=>{
+let distTxt=d.dist<1?`📍 A ${Math.round(d.dist*1000)}m do hotel - dá pra ir a pé!`:`📍 A ${d.dist.toFixed(1)} km do hotel`;
+let st=estaAberto(d)?'<span style="color:#1A7A3A;font-weight:bold">🟢 ABERTO AGORA</span>':'<span style="color:#C00">🔴 FECHADO AGORA</span>';
+html+=`<div class="card"><h3>${d.n}</h3><span class="tag">${d.c.toUpperCase()} • ${d.b.toUpperCase()}</span><p>${d.t}</p><p>📍 ${d.e}</p><p class="horario">🕐 ${d.h} • ${st}</p><p class="dist">${distTxt}</p><div class="btns">${d.f?`<a class="ligar" href="https://wa.me/${d.f}">WhatsApp</a>`:''}<a class="maps" href="https://www.google.com/maps/dir/?api=1&origin=-32.034717,-52.098436&destination=${d.lat},${d.lng}">Como Chegar do Hotel</a></div></div>`;
+});
+document.getElementById('lista').innerHTML=html;
+}
+render();
+</script>
+</body>
+</html>
